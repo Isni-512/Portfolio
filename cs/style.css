@@ -196,5 +196,8 @@ footer p {
   .welcome {
     padding: 15rem 2rem 2rem 2rem;
   }
-
+  
+  ul {
+  gap : 0.1rem;
+  }
 }
