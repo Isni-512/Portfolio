@@ -187,6 +187,7 @@ footer p {
  
   ul{
   left: calc(100vw - 340px);
+    gap : 0.1rem;
   }
 
   .nav-list li {
@@ -195,9 +196,5 @@ footer p {
 
   .welcome {
     padding: 15rem 2rem 2rem 2rem;
-  }
-  
-  ul {
-  gap : 0.1rem;
   }
 }
