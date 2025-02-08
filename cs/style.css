@@ -1,0 +1,190 @@
+:root {
+  --main-white: #f0f0f0;
+  --main-red: #be3144;
+  --main-blue: #45567d;
+  --main-gray: #303841;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+nav {
+  width: 100%;
+  display: block;
+  top: 0;
+  left: 0;
+  background-color: var(--main-red);
+  margin: 0;
+  padding: 0;
+  position: fixed
+}
+
+ul {
+  position: relative;
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  align-items: right;
+  width: 500px;
+  right: calc(500px - 100vw);
+
+
+}
+
+.nav-list li {
+  display: block;
+  position: relative;
+  right: 0;
+  margin: 5px;
+  color: white;
+
+
+
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 18px;
+  font-weight: bold
+}
+
+.nav-list {
+  display: felx;
+  text-align: right
+}
+
+.welcome {
+  margin-top: 60px;
+  padding: 20px;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(62deg, #3a3d40 0%, #181719 100%);;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: var(--main-red);
+  font-size: 50px;
+  margin: 15;
+  text-align: center;
+}
+
+
+
+.introduction {
+  color: var(--main-white);
+  font-size: 25px;
+  margin: 0;
+  padding: 1rem
+}
+
+.project {
+  font-family: 'Times New Roman', Times, sans-serif;
+  text-align: center;
+  padding: 10rem 2rem;
+  background: var(--main-blue);
+
+}
+
+#Game-logo {
+  background-color: yellowgreen;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 3fr 3fr;
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto
+}
+
+.project-img {
+  width: 100%;
+  height: 400px
+}
+
+.project-grid p {
+  font-size: 20px;
+
+}
+
+.project-grid a {
+  background: var(--main-gray);
+  text-decoration: none;
+  color: white;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 80vh;
+  background: var(--main-gray);
+}
+
+.contact-link{
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.contact-img {
+  width: 50px;
+  height: 50px;
+  margin-left: 15px
+}
+
+.contact-img.phone:hover{
+  cursor: pointer;
+}
+
+p.phone{
+  position: absolute;
+  display: none;
+  background-color: var(--main-white);
+  color: var(--main-blue);
+  padding: 2px;
+  border-radius: 8%;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+footer p {
+  color:var(--main-white);
+  font-size: 20px;
+}
+
+
+
+@media (max-width:800px) {
+  .project-img {
+    width: 100%;
+    height: 300px
+  }
+}
