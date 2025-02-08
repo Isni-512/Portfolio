@@ -186,8 +186,8 @@ footer p {
 @media (max-width: 600px) { 
  
   ul{
-  left: calc(100vw - 340px);
-    gap : 0.1rem;
+    left: calc(100vw - 340px);
+    gap : 1.5rem;
   }
 
   .nav-list li {
